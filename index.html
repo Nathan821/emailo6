@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Newsletter Form</title>
+  <style>
+  
+    form {
+      border: 4px solid #f1f1f1;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      font-family: 'Arial', sans-serif;
+    }
+
+  
+    .container {
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    }
+
+    
+    h2 {
+      text-align: center;
+      color: #3705ff;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+  
+    input[type=text], input[type=email], input[type=submit] {
+      width: 100%;
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+
+  
+    input[type=checkbox] {
+      margin-top: 16px;
+    }
+
+  
+    input[type=submit] {
+      background-image: linear-gradient(45deg, green, red, yellow);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+    }
+
+    input[type=submit]:hover {
+      background-image: linear-gradient(45deg, rgb(18, 255, 18), rgb(255, 0, 0), rgb(255, 255, 255));
+    }
+
+  
+    p {
+      color: #ff00f2;
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+  
+    label {
+      font-size: 16px;
+      color: #ff00d9;
+      cursor: pointer;
+    }
+
+  
+    @media (max-width: 768px) {
+      form {
+        width: 90%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form action="action_page.php">
+    <div class="container">
+      <h2>Subscribe to our Newsletter</h2>
+      <p>Stay updated with the latest news and offers!</p>
+    </div>
+
+    <div class="container" style="background-color:white">
+      <input type="text" placeholder="Enter your name" name="name" required>
+      <input type="email" placeholder="Enter your email address" name="mail" required>
+      <label>
+        <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+      </label>
+    </div>
+
+    <div class="container">
+      <input type="submit" value="Subscribe">
+    </div>
+  </form>
+
+</body>
+</html>
